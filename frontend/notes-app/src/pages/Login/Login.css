@@ -37,20 +37,47 @@ h4 {
 }
 
 /* Input Fields */
-.input-box {
+.input-box, .ps-input-box {
     width: 100%;
     padding: 12px;
-    margin-bottom: 15px;
     border: 1px solid #BBDEFB;
     border-radius: 8px;
     font-size: 16px;
     background: #F1F8FF;
     outline: none;
     transition: 0.3s;
+    box-sizing: border-box;
 }
 
-.input-box:focus {
-    border-color: #1565C0;
+/* Ensure inputs are the same size */
+.input-box {
+    margin-bottom: 15px;
+}
+
+/* Password Input Wrapper */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Password Input */
+.ps-input-box {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+/* Password Toggle Icon */
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+.password-toggle:hover {
+    color: #000;
 }
 
 /* Login Button */
@@ -65,6 +92,7 @@ h4 {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
