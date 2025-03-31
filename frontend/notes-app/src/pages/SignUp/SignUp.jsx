@@ -14,6 +14,23 @@ const SignUp = () => {
 
     const handleSignUp = async (e) => {
         e.preventDefault();
+
+        if (!name) {
+            setError("Please enter your name");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            setError("Please enter a valid email address.");
+            return;
+        }
+
+        if (!password) {
+            setError("Please enter the password");
+            return;
+        }
+
+        setError("")
     };
 
     return (
