@@ -34,15 +34,18 @@ const Login = () => {
                 <div className="login-box">
                     <form onSubmit={handleLogin}>
                         <h4>Login</h4>
+
                         <input type="text"
                             placeholder="Email"
                             className="input-box"
                             value={email}
-                            onChange={(e) => setEmai(e.target.value)} />
+                            onChange={(e) => setEmai(e.target.value)} 
+                            />
 
                         <PasswordInput
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)} />
+                            onChange={(e) => setPassword(e.target.value)} 
+                            />
 
                             {error && <p className="err-email">{error}</p>}
 
