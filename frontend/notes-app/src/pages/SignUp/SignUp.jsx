@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import PasswordInput from "../../components/Input/PasswordInput"
 import { validateEmail } from "../../utils/helper";
-
+import "../SignUp/SignUp.css";
 
 const SignUp = () => {
 
