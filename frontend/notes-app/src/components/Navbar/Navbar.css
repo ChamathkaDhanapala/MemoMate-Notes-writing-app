@@ -8,11 +8,34 @@
     position: sticky;
     top: 0;
     z-index: 100;
-}
-
-.navbar-title {
+    width: 100%;
+  }
+  
+  /* Create a flex container to handle 3 sections */
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .navbar-title {
     font-size: 1.5rem;
     font-weight: 600;
     color: #333;
     margin: 0;
-}
+    flex: 1;
+  }
+  
+  .searchbar-wrapper {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  

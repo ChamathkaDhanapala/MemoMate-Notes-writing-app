@@ -1,0 +1,41 @@
+/* SearchBar.css */
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  .searchbar-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 6px;
+  }
+  
+  .searchbar-icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #666;
+    margin-left: 8px;
+    transition: color 0.2s;
+  }
+  
+  .searchbar-icon:hover {
+    color: #000;
+  }
+  
+  .close-icon {
+    color: #e63946;
+  }
+  
+  .search-icon {
+    color: #1d3557;
+  }
+  
