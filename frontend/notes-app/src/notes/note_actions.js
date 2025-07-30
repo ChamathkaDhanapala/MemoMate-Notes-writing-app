@@ -15,7 +15,7 @@ import {
   UPDATE_NOTES_SUCCESS
 } from "./note_types";
 
-import { BASE_URL } from "../../constants/config";
+import { BASE_URL } from "../constant/config";
 import { LOGOUT } from "../users/user_types";
 
 // Get Notes
