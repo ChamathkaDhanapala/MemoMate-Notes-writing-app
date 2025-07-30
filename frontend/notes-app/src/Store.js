@@ -2,8 +2,8 @@ import { legacy_createStore as createStore, applyMiddleware, combineReducers } f
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "@redux-devtools/extension";
 
-import noteReducer from "./reducers/noteReducer";
-import userReducer from "./reducers/userReducer";
+import noteReducer from "./notes/note_reducer";
+import userReducer from "./user/user_reducer";
 
 const rootReducer = combineReducers({
   noteReducer,
